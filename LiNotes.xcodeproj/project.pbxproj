@@ -11,6 +11,14 @@
 		A161BC372887B7EF00B17658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A161BC362887B7EF00B17658 /* ContentView.swift */; };
 		A161BC392887B7F000B17658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A161BC382887B7F000B17658 /* Assets.xcassets */; };
 		A161BC3C2887B7F000B17658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A161BC3B2887B7F000B17658 /* Preview Assets.xcassets */; };
+		A161BC5E2887CDBC00B17658 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A161BC5D2887CDBC00B17658 /* HomeView.swift */; };
+		A161BC622887D7D100B17658 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A161BC612887D7D100B17658 /* OnboardingView.swift */; };
+		A198AF4E288905370037E808 /* LiNotesCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A198AF4C288905370037E808 /* LiNotesCoreData.xcdatamodeld */; };
+		A198AF50288905960037E808 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198AF4F288905960037E808 /* Persistence.swift */; };
+		A198AF52288906910037E808 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198AF51288906910037E808 /* Home.swift */; };
+		A198AF54288906A60037E808 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198AF53288906A60037E808 /* DynamicFilteredView.swift */; };
+		A198AF56288906B70037E808 /* AddNewLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198AF55288906B70037E808 /* AddNewLink.swift */; };
+		A198AF582889071A0037E808 /* LinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A198AF572889071A0037E808 /* LinkViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		A161BC362887B7EF00B17658 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A161BC382887B7F000B17658 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A161BC3B2887B7F000B17658 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A161BC5C2887BD4D00B17658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A161BC5D2887CDBC00B17658 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A161BC612887D7D100B17658 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A198AF4D288905370037E808 /* LiNotesCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LiNotesCoreData.xcdatamodel; sourceTree = "<group>"; };
+		A198AF4F288905960037E808 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A198AF51288906910037E808 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A198AF53288906A60037E808 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
+		A198AF55288906B70037E808 /* AddNewLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewLink.swift; sourceTree = "<group>"; };
+		A198AF572889071A0037E808 /* LinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,12 @@
 		A161BC332887B7EF00B17658 /* LiNotes */ = {
 			isa = PBXGroup;
 			children = (
+				A198AF59288907680037E808 /* ViewModel */,
+				A198AF5A288907720037E808 /* View */,
+				A198AF4F288905960037E808 /* Persistence.swift */,
 				A161BC342887B7EF00B17658 /* LiNotesApp.swift */,
-				A161BC362887B7EF00B17658 /* ContentView.swift */,
+				A198AF4C288905370037E808 /* LiNotesCoreData.xcdatamodeld */,
+				A161BC5C2887BD4D00B17658 /* Info.plist */,
 				A161BC382887B7F000B17658 /* Assets.xcassets */,
 				A161BC3A2887B7F000B17658 /* Preview Content */,
 			);
@@ -65,6 +86,27 @@
 				A161BC3B2887B7F000B17658 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A198AF59288907680037E808 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A198AF572889071A0037E808 /* LinkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A198AF5A288907720037E808 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A198AF51288906910037E808 /* Home.swift */,
+				A161BC5D2887CDBC00B17658 /* HomeView.swift */,
+				A198AF53288906A60037E808 /* DynamicFilteredView.swift */,
+				A198AF55288906B70037E808 /* AddNewLink.swift */,
+				A161BC612887D7D100B17658 /* OnboardingView.swift */,
+				A161BC362887B7EF00B17658 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A161BC5E2887CDBC00B17658 /* HomeView.swift in Sources */,
 				A161BC372887B7EF00B17658 /* ContentView.swift in Sources */,
+				A161BC622887D7D100B17658 /* OnboardingView.swift in Sources */,
+				A198AF582889071A0037E808 /* LinkViewModel.swift in Sources */,
+				A198AF54288906A60037E808 /* DynamicFilteredView.swift in Sources */,
+				A198AF50288905960037E808 /* Persistence.swift in Sources */,
+				A198AF56288906B70037E808 /* AddNewLink.swift in Sources */,
+				A198AF4E288905370037E808 /* LiNotesCoreData.xcdatamodeld in Sources */,
 				A161BC352887B7EF00B17658 /* LiNotesApp.swift in Sources */,
+				A198AF52288906910037E808 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +320,10 @@
 				DEVELOPMENT_TEAM = 462KP9V27X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiNotes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = logosmall;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +350,10 @@
 				DEVELOPMENT_TEAM = 462KP9V27X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiNotes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = logosmall;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +391,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A198AF4C288905370037E808 /* LiNotesCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A198AF4D288905370037E808 /* LiNotesCoreData.xcdatamodel */,
+			);
+			currentVersion = A198AF4D288905370037E808 /* LiNotesCoreData.xcdatamodel */;
+			path = LiNotesCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A161BC292887B7EF00B17658 /* Project object */;
 }
